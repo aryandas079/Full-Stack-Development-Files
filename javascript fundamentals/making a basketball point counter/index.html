@@ -1,0 +1,40 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scorecard</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="https://img.icons8.com/ios-filled/50/test-failed.png" type="image/png">
+    </head> 
+
+    <body> 
+        <div class="scoreboard">
+            <div id="home">
+                <h1>HOME</h1> 
+                <div class="display"> 
+                    <div class="inner-score" id="home-score"><h3>0</h3></div> 
+                </div> 
+                <div class="btn">
+                    <button id="1" onclick="appendValueHome(1)">+1</button>
+                    <button id="2" onclick="appendValueHome(2)">+2</button>
+                    <button id="3" onclick="appendValueHome(3)">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h1>GUEST</h1> 
+                <div class="display"> 
+                    <div class="inner-score" id="guest-score"><h3>0</h3></div> 
+                </div> 
+                <div class="btn">
+                    <button class="1" onclick="appendValueGuest(1)">+1</button>
+                    <button class="2" onclick="appendValueGuest(2)">+2</button>
+                    <button class="3" onclick="appendValueGuest(3)">+3</button>
+                </div>
+            </div>
+        </div> 
+        <div><button class="btn" id="new-game" onclick="newGame()">New Game</button></div> 
+        <div id="lead"><h3>Lead Team: </h3></div>
+        <script src="script.js"></script>
+    </body>
+</html> 

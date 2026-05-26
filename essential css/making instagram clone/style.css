@@ -1,0 +1,101 @@
+@font-face { 
+    font-family: instagram-sans; 
+    src: url("fonts/Instagram\ Sans\ Font\ Family/instagramSans-Regular.ttf")
+}
+body {
+    font-family: instagram-sans, sans-serif; 
+    width: 380px; 
+    height: 800px; 
+    border: 1px solid black; 
+    display: block; 
+    margin:  50px auto; 
+    border: 5px solid black; 
+    border-radius: 20px; 
+    box-shadow: 3px 3px 5px black;
+} 
+header {
+    display: flex; 
+    justify-content: space-between; 
+    border-bottom: 1px solid #8d8484; 
+}
+#oldagram-logo {
+    padding-top: 10px; 
+    width: 100px; 
+    padding: 10px 20px; 
+} 
+#notification-icon, #messenger-icon {
+    width: 30px; 
+    padding: 15px 2.5px;   
+} 
+.avatar-users {
+    width: 60px; 
+    border: 3px solid fuchsia; 
+    border-radius: 50%; 
+} 
+.story-section {
+    display: flex; 
+    justify-content: center; 
+    padding: 5px 15px; 
+    border-bottom: 1px solid #8d8484; 
+} 
+.user-avatar {
+    width: 40px; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+} 
+.post1 #kebab-menu { 
+    padding: 5px;  
+    width: 40px;
+} 
+.post-header {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+    align-items: center;
+    border-bottom: 1px solid #8d8484; 
+} 
+#post-user-name {
+    padding: 5px; 
+    margin-bottom: 5px; 
+} 
+.post-header div {
+    display: flex;
+    align-items: center;
+}
+.post-images { 
+    width: 380px; 
+    height: 360px;    
+} 
+.user-name {
+    font-weight: bold; 
+    font-size: 15px;   
+}
+.location {
+    font-weight: normal; 
+    font-size: 12px;
+} 
+.engagement {
+    display: inline; 
+    margin: 0px; 
+} 
+.eng-icons {
+    width: 35px; 
+    margin: 5px 5px 0px 5px;   
+} 
+p {
+    margin-left: 5px; 
+    margin-top: 5px; 
+} 
+.post-title {
+    margin-top: 0px; 
+    padding-top: 0px;
+}
+nav {
+    border-top: 1px solid #8d8484; 
+    display: flex; 
+    justify-content: space-around; 
+} 
+.nav-icons {
+    width: 30px; 
+    padding: 10px;  
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Standard Calculator</title> 
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/413/PNG/256/Calculator_41154.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gloria+Hallelujah&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Happy+Monkey&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head> 
+
+<body> 
+    <div class="tag"><h1>Standard Calculator</h1></div> 
+    <div id="calculator">
+        <h3 id="display">0</h3>  
+        <div id="main">
+            <div class="lines" id="line1">
+                <button class="btn" onclick="clearDisplay()">C</button>
+                <button class="btn" onclick="appendValue('%')">%</button>
+                <button class="btn" onclick="del()">D</button>
+                <button class="btn" id="divide" onclick="appendValue('/')">/</button>
+            </div>
+            <div class="lines" id="line2">
+                <button class="btn" onclick="appendValue('7')">7</button>
+                <button class="btn" onclick="appendValue('8')">8</button>
+                <button class="btn" onclick="appendValue('9')">9</button>
+                <button class="btn" id="multiply" onclick="appendValue('*')">X</button>
+            </div>
+            <div class="lines" id="line3">
+                <button class="btn" onclick="appendValue('4')">4</button>
+                <button class="btn" onclick="appendValue('5')">5</button>
+                <button class="btn" onclick="appendValue('6')">6</button>
+                <button class="btn" id="subtract" onclick="appendValue('-')">-</button>
+            </div>
+            <div class="lines" id="line4">
+                <button class="btn" onclick="appendValue('1')">1</button>
+                <button class="btn" onclick="appendValue('2')">2</button>
+                <button class="btn" onclick="appendValue('3')">3</button>
+                <button class="btn" id="sum" onclick="appendValue('+')">+</button>
+            </div>
+            <div class="lines" id="line5">
+                <button class="btn" onclick="appendValue('00')">00</button>
+                <button class="btn" onclick="appendValue('0')">0</button>
+                <button class="btn" onclick="appendValue('.')">.</button>
+                <button class="btn" id="equals" onclick="calculate()">=</button>
+            </div>            
+        </div>
+    </div> 
+    <script src="script.js"></script> 
+</body>
+</html> 

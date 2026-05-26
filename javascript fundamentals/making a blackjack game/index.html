@@ -1,0 +1,32 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>BlackJack</title> 
+        <link rel="icon" href="favicon.svg" type="image/svg+xml"> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Gloria+Hallelujah&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Happy+Monkey&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+        <div class="main"> 
+            <div id="blackjack-image"></div> 
+            <h1>Blackjack</h1> 
+            <div id="message"><h3>let's see your card skills</h3></div>  
+            <div class="index">
+                <p id="cards">Cards: </p> 
+                <p id="sum">Sum: </p> 
+            </div>
+            <div class="btn">
+                <button id="start-game" onclick="startGame()">Start Game</button> 
+                <button id="new-game" onclick="newGame()">New Game</button> 
+                <button id="new-card" onclick="newCard()">New Card</button> 
+            </div>
+            <div id="player-info"><p>Player: $0</p></div> 
+        </div>
+        <script src="script.js"></script> 
+    </body>
+</html> 

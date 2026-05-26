@@ -1,0 +1,110 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  align-items: center;
+  top: 0;
+}
+.logo {
+  width: 120px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-family: Arial;
+  font-weight: 600;
+}
+.list-items {
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+}
+.image-section {
+  background-image: url("assets/tesla-hero-image.avif");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 10vh;
+  color: white;
+  font-family: arial;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 100px 400px 300px 400px;
+}
+.btn button {
+  padding: 15px 50px;
+  margin: 10px 10px;
+  border-radius: 15px;
+}
+
+.order-btn {
+  color: white;
+  background-color: #3457b1;
+}
+.order-btn a {
+  text-decoration: none;
+  color: white;
+  font-style: inherit;
+}
+.learn {
+  background-color: #ffffff;
+  color: black;
+}
+.learn a{
+  text-decoration: none;
+  color: black;
+}
+.learn:hover {
+  background-color: #eeeeee;
+}
+.order-btn:hover {
+  background-color: #284288;
+}
+#tag {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: 0px 0px 50px black;
+}
+#tag2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: 0px 0px 50px black;
+}
+#cta {
+  font-size: 15px;
+}
+#cta a {
+  text-decoration: underline;
+  color: white;
+}
+.floating-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 15px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.floating-box a {
+  text-decoration: none;
+  color: black;
+  font-style: inherit;
+  font-size: 15px;
+}
+.floating-box:hover {
+  background-color: #f4f4f4;
+}

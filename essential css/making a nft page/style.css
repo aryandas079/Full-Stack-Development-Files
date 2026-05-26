@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #5f29a3;
+    color: white;
+    padding: 30px 0;
+}
+.header-el {
+    width: 620px;
+    margin: 0 auto;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header h2 {
+    margin-top: 10px;
+    color: #d0aaf0;
+}
+
+/* MAIN */ 
+/* setting up the style  */
+.section-one { 
+    display: block; 
+    width: 620px; 
+    margin: 0px auto; 
+} 
+.section-two {
+    background-color: #5f29a3; 
+    color: whitesmoke; 
+} 
+.inner-section-two {
+    display: block; 
+    width: 620px; 
+    margin: 0px auto; 
+    padding: 10px 0px; 
+} 
+.image-container {
+    display: flex; 
+    justify-content: space-around; 
+} 
+#pixel-char, #data {
+    width: 300px; 
+    border-radius: 10px; 
+} 
+#pixel-char {
+    margin-right: 10px; 
+} 
+#data {
+    margin-left: 10px;
+}
+/* setting up the footer  */ 
+footer {
+    padding: 45px 0px; 
+    display: block; 
+    text-align: center; 
+} 
+footer h6 {
+    font-size: 2rem; 
+    font-weight: normal; 
+}
+/* setting up the details  */
+.section-one h2 {
+    font-size: 2rem; 
+    font-weight: 500;
+} 
+#hero-image {
+    width: 620px; 
+} 
+.section-one h3 { 
+    font-size: 1.5rem; 
+    font-weight: 500;
+} 
+.section-one p {
+    font-weight: 400; 
+    line-height: 20px;
+} 
+.section-one a {
+    color: orangered; 
+    text-decoration: underline dashed; 
+} 
+#buy-nft a, #more-info a {
+    border: 1px solid #5f29a3; 
+    text-decoration: none; 
+    margin: 3px; 
+    display: inline-block; 
+    color: whitesmoke;  
+} 
+#buy-nft { 
+    border-radius: 15px; 
+    padding: 10px 15px; 
+    background-color: #5f29a3; 
+} 
+#more-info {
+    border-radius: 15px; 
+    padding: 10px 15px; 
+    background-color: black; 
+    margin: 3px;  
+} 
+#buy-nft:hover, #more-info:hover {
+    font-size: 1.5rem; 
+} 
+#about-us, #contact {
+    border: 1px solid #5f29a3; 
+    text-decoration: none; 
+    margin: 3px; 
+    display: inline-block; 
+    color: whitesmoke;  
+} 
+#about-us {
+    background-color: whitesmoke; 
+    color: #5f29a3; 
+    border-radius: 15px; 
+    padding: 10px 15px;     
+} 
+#contact { 
+    background-color: goldenrod; 
+    color: black; 
+    border-radius: 15px; 
+    padding: 10px 15px;     
+} 
+#about-us:hover, #contact:hover {
+    font-size: 1.5rem; 
+} 

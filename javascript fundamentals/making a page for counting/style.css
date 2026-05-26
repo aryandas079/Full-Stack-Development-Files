@@ -1,0 +1,44 @@
+body {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0; 
+    background-image: linear-gradient(black,grey);  
+    height: 100vh;
+} 
+.main {
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    text-shadow: 0px 0px 5px black; 
+    font-size: 30px; 
+    border: 5px solid white; 
+    border-radius: 15px; 
+    padding: 30px; 
+    margin: 100px 200px; 
+}
+.btn button {
+    box-shadow: 0px 0px 5px black; 
+    padding: 15px 25px; 
+    font-size: 15px; 
+    gap: 5px; 
+    background-color: white; 
+    color: black; 
+    border: 1px solid white; 
+    border-radius: 10px;  
+}
+.btn button:hover {
+    font-size: 30px;  
+    border: 1px solid grey; 
+}
+#count-el {
+    margin: 10px 0px 0px 0px; 
+} 
+#save-el {
+    margin: 10px 0px 0px 0px;
+} 

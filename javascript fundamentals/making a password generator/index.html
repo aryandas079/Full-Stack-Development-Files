@@ -1,0 +1,29 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Password Generator</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="https://img.icons8.com/?size=48&id=82901&format=png" type="image/png"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Gloria+Hallelujah&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Happy+Monkey&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <div class="main">
+            <div class="inner">
+                <div class="tag">
+                    <h1>Generate a<br><span id="tag-color">random password</span></h1> 
+                </div>
+                <p id="tag-line">never use an insecure password again.</p> 
+                <button class="btn" id="generate" onclick="generatePass()">Generate passwords</button> 
+            </div>
+            <div> 
+                <button id="passone" class="btn" onclick="textCopy(1)">*****</button> 
+                <button id="passtwo" class="btn" onclick="textCopy(2)">*****</button> 
+            </div> 
+        </div> 
+        <script src="script.js"></script>
+    </body>
+</html> 

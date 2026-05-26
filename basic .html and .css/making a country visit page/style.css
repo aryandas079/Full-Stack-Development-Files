@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+#hero-image {
+  width: auto;
+  height: 400px;
+  background-image: url("https://images.pexels.com/photos/7187719/pexels-photo-7187719.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-card {
+  text-align: center;
+  color: white;
+}
+#tag1 {
+  margin: 10px 0px 2.5px 0px;
+  text-shadow: 0px 0px 10px black;
+  font-size: 80px;
+}
+#tag2 {
+  margin: 10px 0px 2.5px 0px;
+  text-shadow: 0px 0px 1px black;
+  font-size: 20px;
+}
+.btn button {
+  padding: 10px 25px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+#wiki-india {
+  background-color: white;
+}
+#insta-india {
+  background-image: linear-gradient(#ed9545, #b229a2);
+}
+#insta-india a {
+  color: white;
+  font-size: 15px;
+}
+#wiki-india a {
+  color: black;
+  font-size: 15px;
+}
+.btn:hover {
+  font-size: 25px;
+}
+#tag3 {
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  margin: 5px 0px;
+}
+.visit-index-section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#taj-mahal-image {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/17423832/pexels-photo-17423832.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+}
+#JK-image {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/25786565/pexels-photo-25786565.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+}
+#goa-image {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/28355680/pexels-photo-28355680.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+}
+.inner-list {
+  list-style: none;
+  font-size: 12px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+.inner-tags {
+  text-align: center;
+}
+.inner-list {
+  font-size: 12px;
+}
+#taj-mahal-image, #JK-image, #goa-image {
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 5px 5px 0px black;
+}
+.footer button {
+  position: fixed;
+  width: 250px;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 30px;
+  margin: 10px auto;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+#click {
+  font-style: inherit;
+  text-align: center;
+  font-size: 50px;
+}

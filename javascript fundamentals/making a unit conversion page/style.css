@@ -1,0 +1,67 @@
+body {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+       "GRAD" 0; 
+    display: flex; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    flex-direction: column; 
+} 
+.main {
+    border: 1px solid black; 
+    width: 600px; 
+    height: 700px; 
+    padding: 0px ; 
+    border-radius: 20px; 
+    display: flex; 
+    justify-content: top; 
+    flex-direction: column; 
+    align-items: top; 
+    background-color: #f4f4f4; 
+} 
+.header {
+    border: 1px solid black; 
+    border-radius: 20px; 
+    padding: 40px 40px;  
+    background-color: #6943ff; 
+    color: white; 
+}
+h1 {
+    font-size: 30px;     
+}
+#input-el {
+    border: 1px solid #9b7bff; 
+    padding: 10px; 
+    width: 80px; 
+    background-color: #6943ff; 
+    color: white; 
+    height: 40px; 
+    border-radius: 20px; 
+    font-size: 30px; 
+    font-style: inherit; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+#enterEl {
+    padding: 10px 20px; 
+    border: 1px solid white; 
+    border-radius: 10px; 
+    font-style: inherit; 
+    font-size: 15px;  
+}
+#enterEl:hover { 
+    background-color: rgb(168, 192, 235); 
+    font-size: 20px; 
+}
+.length, .volume, .mass {
+    border: 1px solid #ffffff; 
+    margin: 20px 20px 5px 20px; 
+    padding: 10px 30px; 
+    border-radius: 10px; 
+    background-color: #ffffff; 
+}
