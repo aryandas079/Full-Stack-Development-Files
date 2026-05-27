@@ -1,0 +1,133 @@
+@font-face {
+    src: url("fonts/InstagramSans-Medium.ttf"); 
+    font-family: instagram-sans;
+} 
+body {
+    font-family: instagram-sans, sans-serif; 
+    width: 100%; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    margin: 0px; 
+} 
+h1{
+    font-size: 3rem; 
+    font-weight: 600; 
+    margin: 0px; 
+    padding: 10px; 
+    color: whitesmoke; 
+    background-color: darkslategray; 
+    font-weight: 300; 
+} 
+ul {
+    list-style: none; 
+    margin: 0px; 
+    padding: 10px; 
+    padding-left: 200px;
+    font-size: 2rem; 
+} 
+.section-post h3 {
+    margin: 0px; 
+    padding: 25px; 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    background-color: darkslategrey; 
+    color: whitesmoke; 
+} 
+.section-image {
+    width: 100%; 
+} 
+.image-container {
+    position: relative; 
+} 
+.accent-text {
+    position: absolute; 
+    padding: 15px 30px; 
+    background-color: coral; 
+    color: whitesmoke; 
+    top: 0px; 
+    left: 30px; 
+    font-size: 1.5rem; 
+    text-shadow: 0px 0px 1px black; 
+    cursor: pointer; 
+} 
+.section-post p {
+    font-size: 2rem; 
+    font-weight: 300; 
+    padding: 10px; 
+    border: none; 
+    box-shadow: 3px 3px 5px black;  
+    margin: 0px; 
+    margin: 20px
+} 
+.popup-container {
+    position: relative; 
+}
+.cookie-popup { 
+    position: fixed; 
+    top: 25%;  
+    left: 25%;  
+    bottom: 25%;  
+    right: 25%;  
+    margin: auto; 
+    background-color: #212529; 
+    color: whitesmoke; 
+    text-align: center; 
+    width: 450px; 
+    height: 400px;
+    padding: 50px; 
+    border-radius: 20px; 
+    font-size: 1.25rem;  
+} 
+.close-btn { 
+    top: 0px; 
+    right: 0px;  
+    position: absolute; 
+    padding: 15px; 
+    background-color: whitesmoke; 
+    color: black; 
+    border: none; 
+    font-size: 1.5rem;   
+} 
+.close-btn:hover {
+    background-color: brown; 
+    color: whitesmoke; 
+    box-shadow: 1px 1px 5px white;
+}
+#user-name { 
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    margin: 10px;
+}
+#user-email { 
+    margin: 10px;
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 20px; 
+} 
+#user-name::placeholder, #user-email::placeholder {
+    color: black; 
+    font-size: 1rem; 
+}
+#accept-btn:hover, #reject-btn:hover { 
+    cursor: pointer; 
+    font-size: 1.25rem;
+}
+#accept-btn, #reject-btn { 
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    font-size: 1rem; 
+    color: black; 
+    background-color: whitesmoke; 
+} 
+.popup-container {
+    display: none; 
+} 
+.button-fields {
+    display: flex; 
+    /* flex-direction: row-reverse;  */
+    justify-content: center; 
+} 
+.button-fields-reverse {
+    flex-direction: row-reverse; 
+} 

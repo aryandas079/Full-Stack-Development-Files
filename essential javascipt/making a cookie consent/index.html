@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie Consent Page</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="https://img.icons8.com/plasticine/100/cookie.png" type="image/png"> 
+    </head>
+    <body> 
+        <main> 
+            <h1>Learning to code? This is the most important thing you will ever read!</h1> 
+            <section class="tags"> 
+                <ul> 
+                    <li>💰 Land a job with a 6 figure salary</li> 
+                    <li>💻 Master JavaScript in 3 hours</li> 
+                    <li>⚛️ Learn React in 10 minutes</li> 
+                    <li>☕ Be a NodeJS Dev by lunchtime</li>  
+                </ul>
+            </section> 
+            <section class="section-post"> 
+                <h3>My subliminal learning technique worked for Mark Zuckerberg and Albert Einstein, and it can work for you!</h3> 
+                <div class="image-container"> 
+                    <img src="images/bugatti.jpg" class="section-image" alt="a fancy of a buggati in street" /> 
+                    <p class="accent-text">Follow my advice to own a Buggati like shown</p> 
+                </div>
+                <p>Want a great job in tech? Want a six-figure salary? Then you have come to the right place. I am going to tell you all you need to know to get all of that and much more, without you lifting a finger. You can learn passively. Just sit back, close your eyes, and let the sound of my voice make the code sink deep into your brain.</p>
+            </section> 
+            <div class="popup-container"> 
+                <div> 
+                    <section class="cookie-popup"> 
+                    <h2>We ❤️ Your Data!</h2> 
+                    <p id="note-popup">We have a strict policy on tracking and spamming: we'll definitely track you, and we'll definitely spam you. To use this site, enter your name and email address and accept our ridiculous terms and conditions.</p> 
+                    <div class="pop-up"> 
+                        <form class="consent-form">
+                                <div class="input-fields"> 
+                                    <input required type="text" name="userName" id="user-name" placeholder="Enter your full name" aria-label="enter your username" /><br> 
+                                    <input required type="email" name="userEmail" id="user-email" placeholder="Enter your email" aria-label="enter your email" /> 
+                                </div> 
+                                <div class="button-fields"> 
+                                    <button id="accept-btn" type="submit" aria-label="cookie accept button">Accept</button> 
+                                    <button id="reject-btn" type="reset" aria-label="cookie reject button">Reject</button>  
+                                </div> 
+                            </div>
+                        </form>
+                    <button type="button" class="close-btn" aria-label="Close popup" disabled>×</button> 
+                </div>
+            </section>
+            </div>
+        </main> 
+        <script src="script.js"></script>
+    </body>
+</html> 
