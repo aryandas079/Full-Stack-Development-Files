@@ -1,0 +1,125 @@
+import { catsData } from "./data.js"; 
+import { imageDatabase } from "./imageDB.js"
+
+let catsEmotion = []
+
+function catsEmotionFunc() {
+
+    for (let cat of catsData) {
+
+        for (let emotion of cat.emotionTags) {
+
+            if (!catsEmotion.includes(emotion)) {
+                catsEmotion.push(emotion)
+            }
+        }
+    }
+}
+
+function listPrint() {
+
+    const emotionList = document.querySelector(".emotion-list-inner")
+
+    for (let emotion of catsEmotion) {
+
+        emotionList.innerHTML += ` 
+            <div style="display:flex; justify-content:space-between;"> 
+
+                <li style="padding:5px; font-size:1.05rem;">
+                    ${emotion}
+                </li> 
+
+                <input 
+                    type="radio" 
+                    value="${emotion}" 
+                    name="emotion"
+                />
+
+            </div>
+        `
+    }
+}
+
+function gifPopUp() {
+
+    document.getElementById("submit-button")
+        .addEventListener("click", function(event) {
+
+        event.preventDefault()
+
+        const selectedRadio =
+            document.querySelector("input[type='radio']:checked")
+
+        if (!selectedRadio) {
+            alert("Please select an emotion")
+            return
+        }
+
+        const selectedEmotion = selectedRadio.value
+
+        const imageType =
+            document.getElementById("gif-select-checkbox").checked
+                ? "gif"
+                : "jpeg"
+
+        const matchingImages =
+            imageDatabase[selectedEmotion].filter(image =>
+                image.endsWith(imageType)
+            )
+
+        if (matchingImages.length === 0) {
+            alert(`No ${imageType} found for ${selectedEmotion}`)
+            return
+        }
+
+        const randomNumber =
+            Math.floor(Math.random() * matchingImages.length)
+
+        document.querySelector(".meme-popup").innerHTML = `
+
+            <div 
+                style="
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    margin:auto;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    padding:20px;
+                    border-radius:15px;
+                    width:350px;
+                    height:450px;
+                    background-color:darkolivegreen;
+                    position:fixed;
+                "
+            >
+
+                <button id="close-btn">X</button>
+
+                <img 
+                    src="images/${matchingImages[randomNumber]}"
+                    alt="${selectedEmotion}"
+                    style="width:320px; border-radius:15px;"
+                />
+
+            </div>
+        `
+
+        document.querySelector(".meme-popup").style.display = "block"
+
+        document.getElementById("close-btn")
+            .addEventListener("click", function() {
+
+            document.querySelector(".meme-popup").style.display = "none"
+        })
+    })
+}
+
+catsEmotionFunc()
+listPrint()
+gifPopUp() 
+
+
+this was the wrong script.js written by me at first 

@@ -1,0 +1,58 @@
+@font-face {
+    src: url(fonts/InstagramSans-Regular.ttf); 
+    font-family: instagram-sans; 
+} 
+body {
+    font-family: instagram-sans, sans-serif; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    margin: 0px;  
+} 
+header {
+    display: flex; 
+    justify-content: center; 
+    background-color: #67595E; 
+    color: #EED6D3; 
+} 
+header img {
+    width: 120px; 
+} 
+header #h1-tag {
+    font-size: 1.25rem;
+} 
+main {
+    text-align: center; 
+} 
+main h2 {
+    font-size: 1.5rem; 
+    padding: 10px 0px;
+}
+ul {
+    list-style: none; 
+    border: 1px solid black; 
+    padding: 10px; 
+    width: 400px; 
+    height: 325px; 
+    text-align: left; 
+    display: block; 
+    border-radius: 10px;  
+    margin: 0px auto;
+} 
+#submit-button:hover {
+    box-shadow: 3px 3px 10px black; 
+} 
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+}
+
+#close-btn:hover {
+    background-color: red;
+    color: white;
+} 
