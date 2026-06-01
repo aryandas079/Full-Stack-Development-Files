@@ -1,0 +1,69 @@
+body { 
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;   
+    margin: 0; 
+} 
+header { 
+    background-color: darkolivegreen; 
+    color: whitesmoke; 
+    font-size: 2.25rem; 
+    text-align: center; 
+    padding: 0.125em 0.0625em;
+} 
+.color-picker-block { 
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: repeat(3, auto); 
+    grid-template-areas: 
+    "color dropdown submit" 
+    "display display display " 
+    "display display display "; 
+    gap: 1.25em;
+    margin: 0.5em; 
+} 
+#color { 
+    grid-area: color; 
+    width: 300px; 
+    height: 50px; 
+} 
+#dropdown { 
+    grid-area: dropdown; 
+} 
+#submit-btn, 
+#dropdown, 
+#color { 
+    font-size: 1.5rem; 
+    border-radius: 5px; 
+    cursor: pointer;
+} 
+#submit-btn { 
+    grid-area: submit; 
+    background-color: burlywood; 
+}
+.display-colors { 
+    grid-area: display;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75em;
+    margin-top: 1em;
+}
+.color-container {
+    text-align: center;
+}
+.color-block {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+} 
+.color-block:hover { 
+    cursor: pointer;
+}
+footer { 
+    position: fixed; 
+    bottom: 0; 
+    margin-left: 0.125em;
+} 
