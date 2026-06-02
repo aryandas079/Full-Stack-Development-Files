@@ -1,0 +1,155 @@
+*, ::after, ::before { 
+    box-sizing: border-box; 
+    margin: 0; 
+} 
+body { 
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1.25fr 0.5fr 5fr 0.25fr; 
+    grid-template-areas: 
+    "head" 
+    "search" 
+    "movie" 
+    "foot"; 
+    height: 100vh; 
+    width: 100vw; 
+    background: linear-gradient(180deg,#eef2f3 0%, #ffffff 100%);
+} 
+header { 
+    grid-area: head; 
+    background-color: darkolivegreen; 
+    color: whitesmoke; 
+    display: flex; 
+    padding: 1.5em 0.5rem; 
+    font-size: 1rem; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-shadow: 0px 0px 3px black; 
+} 
+header a { 
+    text-decoration: none; 
+    color: whitesmoke; 
+} 
+.search-bar { 
+    grid-area: search; 
+    padding: 0.25em; 
+    display: flex; 
+    justify-content: space-between; 
+} 
+.search-bar input { 
+    padding: 1.25em 1em; 
+    width: 75%; 
+    font-size: 1.125rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow .15s ease;
+} 
+.search-bar #submit { 
+    width: 24%; 
+    font-size: 1.125rem;
+    background: darkolivegreen;
+    color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.movie-list { 
+    grid-area: movie; 
+    padding: 2em; 
+    display: block; 
+    margin: 0 auto; 
+    text-align: center;
+    max-width: 980px;
+} 
+footer { 
+    grid-area: foot; 
+    text-align: center;
+    background-color: darkolivegreen; 
+    color: whitesmoke; 
+    padding: 0.125em;  
+} 
+.movie-banner {
+    display: grid;
+    grid-template-columns: 220px 1fr 160px;
+    grid-template-areas:
+        "img tt rr"
+        "img gg watch"
+        "img pp pp";
+
+    gap: 1rem;
+    align-items: start;
+    background: rgba(255,255,255,0.9);
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+    margin-bottom: 1.25rem;
+}
+.img {
+    grid-area: img;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.tt {
+    grid-area: tt;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0f172a;
+}
+.rr {
+    grid-area: rr;
+    justify-self: end;
+}
+.r-time {
+    grid-area: rtime;
+}
+.gg {
+    grid-area: gg;
+    color: #475569;
+    font-style: italic;
+}
+#add-to {
+    grid-area: watch;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    background: #0b6b3a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .08s ease, box-shadow .12s ease;
+}
+.pp {
+    grid-area: pp;
+    margin-top: 0.5rem;
+    color: #334155;
+    line-height: 1.5;
+} 
+
+@media (max-width: 720px) {
+    .movie-banner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img"
+            "tt"
+            "rr"
+            "gg"
+            "watch"
+            "pp";
+    }
+    #img { width: 100%; height: auto; }
+    #rr { justify-self: start; }
+    .search-bar input, .search-bar #submit { width: 100%; }
+    .search-bar { flex-direction: column; gap: .5rem; }
+}
