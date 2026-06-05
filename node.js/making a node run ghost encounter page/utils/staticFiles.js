@@ -12,7 +12,11 @@ const types={
     }
 
 export default async function(req, res) { 
-    const filePath = path.join("public", req.url === "/" ? "index.html" : req.url) 
+    const filePath = req.url.startsWith("/utils/") 
+        ? path.join("utils", req.url.slice(7)) 
+        : req.url.startsWith("/data/") 
+            ? path.join("data", req.url.slice(6)) 
+            : path.join("public", req.url === "/" ? "index.html" : req.url) 
     try { 
         const data = await fs.readFile(filePath) 
         const ext = path.extname(filePath) 

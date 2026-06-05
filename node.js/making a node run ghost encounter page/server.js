@@ -4,11 +4,18 @@ import makeLog from "./utils/makeLog.js"
 import staticFile from "./utils/staticFiles.js" 
 import get from "./handlers/getRequest.js" 
 import post from "./handlers/postRequest.js" 
+import sseHandler from "./handlers/sseHandler.js"
 
 const PORT = 8000
 const server = http.createServer(async (req, res) => { 
     // creating a log file for each server entry 
     makeLog(req, fs) 
+
+    // SSE Request for live updates
+    if (req.url === "/live-events" && req.method === "GET") {
+        return sseHandler(req, res);
+    }
+
     // now making the API 
     // for get request 
     if (req.url.startsWith("/api") && req.method === "GET") { 
