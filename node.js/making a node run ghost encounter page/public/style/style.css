@@ -145,6 +145,13 @@ textarea {
         gap: 3em;
     }
 } 
+/* making style to the live ghost link  */ 
+.live-ghost { 
+    text-decoration: underline solid; 
+    text-align: center; 
+    color: whitesmoke; 
+    font-family: Google Sans, sans-serif; 
+}
 /* responsible design targeting laptop/desktop screen  */
 @media (min-width: 1080px) { 
     form { 
@@ -156,4 +163,4 @@ textarea {
     form { 
         width: 60%;
     }
-}
+} 
