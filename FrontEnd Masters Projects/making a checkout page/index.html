@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+          type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+         alt="coffee masters logo"/>
+    <h1>Coffee Masters</h1>
+</header>
+<main>
+    <form class="upper-section">
+        <div class="items">
+            <h2>ITEMS</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <p>1x Cappuccino</p>
+                        <p class="list-class">Lite Foam</p>
+                    </div>
+                    <p>$3.35</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <p>1x Cappuccino</p>
+                        <p class="list-class">Lite Milk</p>
+                        <p class="list-class">Double Espresso</p>
+                    </div>
+                    <p>$3.85</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <p>1x Croissant</p>
+                        <p class="list-class">Butter</p>
+                    </div>
+                    <p>$2.45</p>
+                </li>
+            </ul>
+        </div>
+        <div class="payments-section">
+            <div class="name-section">
+                <label for="name">Name for order</label>
+                <input type="text" id="name" required/>
+            </div>
+            <div class="details">
+                <div class="card-section">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" required pattern="[0-9]{16}"
+                           maxlength="16" minlength="13" title="16-digit card number"/>
+                </div>
+                <div class="cvv-section">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv"
+                           maxlength="3" minlength="3" required pattern="[0-9]{3}" title="3-digit CVV"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="lower-section">
+        <div class="checkout-section">
+            <div class="checkout-class">
+                <p>Subtotal</p>
+                <p>$9.65</p>
+            </div>
+            <div class="checkout-class">
+                <p>Tax</p>
+                <p>$0.82</p>
+            </div>
+            <div class="checkout-class">
+                <p><strong>Total</strong></p>
+                <p><strong>$10.47</strong></p>
+            </div>
+            <button type="submit">Place Order</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

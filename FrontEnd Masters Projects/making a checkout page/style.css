@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+body {
+    overflow: auto;
+    background-color: #F4EABB;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #412315;
+    color: #F4EABB;
+    font-size: 1.2rem;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header img {
+    width: 60px;
+    padding-right: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+.upper-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+.items {
+    background-color: #EEE1D5;
+    color: #412315;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    flex: 1;
+}
+.list-class {
+    color: #B49477;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.payments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.name-section, .details {
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #EEE1D5;
+    color: #412315;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #B49477;
+    font-size: 1rem;
+}
+.checkout-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+.checkout-section button {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #DEB993;
+    color: #412315;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.checkout-section button:hover {
+    background-color: #d0a98f;
+}
+.checkout-class {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+
