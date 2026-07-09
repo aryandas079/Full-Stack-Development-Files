@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+main {
+    display: grid; 
+    grid-template-columns: 1fr;
+    font-weight: 400;
+    font-size: 3rem;
+    grid-template-areas:
+        "display"
+        "row1"
+        "row2"
+        "row3"
+        "row4"
+        "row5";
+    row-gap: 0;
+}
+#display {
+    grid-area: display;
+    margin: 0;
+    padding: 0 20px;
+    width: 500px;
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#row1, #row2, #row3, #row4, #row5 {
+    display: flex;
+}
+#row1 {
+    grid-area: row1;
+}
+#row2 {
+    grid-area: row2;
+}
+#row3 {
+    grid-area: row3;
+}
+#row4 {
+    grid-area: row4;
+}
+#row5 {
+    grid-area: row5;
+}
+.numbers, .operators {
+    width: 125px;
+    height: 100px;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+.operators {
+    background-color: #DF974C;
+    color: white;
+}
+.operators:hover {
+    background-color: #dfab6d;
+}
+.operators:active {
+    background-color: #c97b2d;
+}
+.numbers {
+    background-color: #D8D9DB;
+    color: black;
+}
+.numbers:hover {
+    background-color: #ebebeb;
+}
+.numbers:active {
+    background-color: #bbbcbe;
+}
+#zero {
+    width: 375px;
+}
+#clear {
+    width: 250px;
+}
+
+
