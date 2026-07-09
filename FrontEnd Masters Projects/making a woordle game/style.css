@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+header {
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.infographics {
+    border: 1px solid darkolivegreen;
+    width:  500px;
+    color: darkolivegreen;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+body {
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.woordle-game {
+    display: grid;
+    grid-template-columns: repeat(5, 65px);
+    grid-template-rows: repeat(6, 65px);
+    gap: 5px;
+}
+.box {
+    border: 1px solid grey;
+    width: 65px;
+    height: 65px;
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message, .win {
+    color: darkolivegreen;
+    font-size: 1.5rem;
+}
+.message, .lose {
+    color: crimson;
+    font-size: 1.5rem;
+}
+
+
