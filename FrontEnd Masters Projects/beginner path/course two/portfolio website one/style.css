@@ -1,274 +1,276 @@
 * {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    box-sizing: border-box; 
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
 }
 
 /* this is for making the light/dark theme switcher */
 .theme-select {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 #theme-toggle {
-    display: none;
+  display: none;
 }
 
 .switch {
-    position: relative;
-    width: 60px;
-    height: 32px;
-    background: #5d6472;
-    border: 2px solid #72a8ff;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  position: relative;
+  width: 60px;
+  height: 32px;
+  background: #5d6472;
+  border: 2px solid #72a8ff;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .thumb {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 24px;
-    height: 24px;
-    background: white;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
 /* Move thumb */
-#theme-toggle:checked+.switch .thumb {
-    transform: translateX(28px);
+#theme-toggle:checked + .switch .thumb {
+  transform: translateX(28px);
 }
 
 /* Optional active track color */
-#theme-toggle:checked+.switch {
-    background: #2b3240;
+#theme-toggle:checked + .switch {
+  background: #2b3240;
 }
 
 :root {
-    color-scheme: light;
+  color-scheme: light;
 }
 
 body:has(#theme-toggle:checked) {
-    color-scheme: dark;
+  color-scheme: dark;
 }
 
 body {
-    background: light-dark(#ffffff, #2b3240);
-    color: light-dark(#111827, #ffffff);
+  background: light-dark(#ffffff, #2b3240);
+  color: light-dark(#111827, #ffffff);
 }
 
 /* this is for making the body  */
 body {
-    background-color: light-dark(#ffffff, #343C47);
-    color: light-dark(#111827, #f9fafb);
-    overflow: auto; 
-    text-align: center;
-    color-scheme: light-dark();
+  background-color: light-dark(#ffffff, #343c47);
+  color: light-dark(#111827, #f9fafb);
+  overflow: auto;
+  text-align: center;
+  color-scheme: light-dark();
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    color: light-dark(#111827, #f9fafb);
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  color: light-dark(#111827, #f9fafb);
 }
 
 .about-details h1,
 .about-details h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .about-details h1 {
-    font-size: 4rem;
-    font-weight: 600;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .about-details h2 {
-    font-size: 1.25rem;
-    margin-top: 10px;
-    text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .about-details p {
-    line-height: 1.5;
-    font-size: 1.125rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
 }
 
 .about-details span {
-    color: #5A91C7;
+  color: #5a91c7;
 }
 
 .social-icons {
-    fill: light-dark(#111827, #32779B);
-    width: 50px;
-    height: 50px;
+  fill: light-dark(#111827, #32779b);
+  width: 50px;
+  height: 50px;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero-image {
-    object-fit: cover;
-    object-position: top;
-    overflow: hidden;
-    height: 300px;
-    width: 300px;
-    border-radius: 20px 0px;
-} 
-
-header { 
-    display: flex; 
-    justify-content: center; 
-    margin: 15px 0px;
-} 
-
-/* now making the project section look good  */ 
-.projects { 
-    margin-top: 30px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-} 
-
-.capitals { 
-    font-size: 2rem; 
-    text-transform: uppercase; 
-    margin: 0;
-} 
-
-.project {  
-    margin: 5px 0px; 
-    padding: 5px; 
-    border-radius: 20px 0px; 
-    background-color: light-dark(#E3E4E8, #252525); 
-    color: light-dark(#3C3D44, whitesmoke);
-} 
-
-.project img { 
-    width: 300px; 
-    border-radius: 20px 0px; 
-    margin-top: 15px;
-} 
-
-.project h3 { 
-    font-size: 1.5rem; 
-    text-transform: uppercase;
-} 
-
-.project p { 
-    line-height: 1.25; 
-    font-size: 1.125rem;
-} 
-
-.skills { 
-    display: flex; 
-    justify-content: center; 
-    gap: 10px;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px 0px;
 }
-.skillset { 
-    color: whitesmoke; 
-    background-color: #5A91C7; 
-    border-radius: 10px 0px; 
-    padding: 5px 10px;
-} 
 
-footer { 
-    margin: 50px 0px 35px 0px;
-} 
+header {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
 
-.footer-section { 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 10px; 
-    margin-bottom: 10px;
-} 
+/* now making the project section look good  */
+.projects {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-.footer-section h3 { 
-    font-size: 1.25rem; 
-} 
+.capitals {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-.footer-section a { 
-    color: light-dark(#32779B, #72a8ff); 
-} 
+.project {
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 20px 0px;
+  background-color: light-dark(#e3e4e8, #252525);
+  color: light-dark(#3c3d44, whitesmoke);
+}
 
-.social-icons:hover { 
-    fill: light-dark(#32779B, whitesmoke);
-} 
+.project img {
+  width: 300px;
+  border-radius: 20px 0px;
+  margin-top: 15px;
+}
 
-/* now making responsive designs for bigger screens  */ 
-@media (min-width: 820px) { 
-    .about { 
-        display: flex; 
-        text-align: left; 
-        justify-content: space-around; 
-        margin: 100px 0px;
-    } 
-    .about p { 
-        max-width: 50vw;
-    }
-    .hero-image { 
-        object-fit: cover; 
-        object-position: auto; 
-        height: auto;
-    } 
-    .project { 
-        display: flex; 
-        justify-content: space-between; 
-        flex-direction: row-reverse; 
-        gap: 30px; 
-        margin: 50px 0px; 
-        text-align: left; 
-        padding: 5px 20px;
-    }
-    .project p { 
-        max-width: 40vw;
-    } 
-    .image-projects img { 
-        width: 30vw;
-    }
-    .projects { 
-        display: block; 
-        margin: 0 auto;
-        max-width: 80vw; 
-    } 
-    .footer-section { 
-        display: flex; 
-        justify-content: space-around; 
-        text-align: left; 
-        gap: 30px; 
-        margin: 30px 0px 50px;
-    } 
-    .footer-section div { 
-        max-width: 20vw;
-    } 
-    footer .capitals { 
-        text-align: left; 
-        margin-left: 6vw;
-    } 
-    footer .social-links { 
-        display: flex;
-        justify-content: left; 
-        margin-left: 3vw;
-    }  
-    footer { 
-        background-color: light-dark(#E3E4E8, #252525); 
-        color: light-dark(#252525, whitesmoke); 
-        padding: 20px 0px 10px 0px;
-    } 
-    body, html, footer { 
-        margin: 0; 
-    } 
+.project h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.project p {
+  line-height: 1.25;
+  font-size: 1.125rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.skillset {
+  color: whitesmoke;
+  background-color: #5a91c7;
+  border-radius: 10px 0px;
+  padding: 5px 10px;
+}
+
+footer {
+  margin: 50px 0px 35px 0px;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+}
+
+.footer-section a {
+  color: light-dark(#32779b, #72a8ff);
+}
+
+.social-icons:hover {
+  fill: light-dark(#32779b, whitesmoke);
+}
+
+/* now making responsive designs for bigger screens  */
+@media (min-width: 820px) {
+  .about {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin: 100px 0px;
+  }
+  .about p {
+    max-width: 50vw;
+  }
+  .hero-image {
+    object-fit: cover;
+    object-position: auto;
+    height: auto;
+  }
+  .project {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin: 50px 0px;
+    text-align: left;
+    padding: 5px 20px;
+  }
+  .project p {
+    max-width: 40vw;
+  }
+  .image-projects img {
+    width: 30vw;
+  }
+  .projects {
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    gap: 30px;
+    margin: 30px 0px 50px;
+  }
+  .footer-section div {
+    max-width: 20vw;
+  }
+  footer .capitals {
+    text-align: left;
+    margin-left: 6vw;
+  }
+  footer .social-links {
+    display: flex;
+    justify-content: left;
+    margin-left: 3vw;
+  }
+  footer {
+    background-color: light-dark(#e3e4e8, #252525);
+    color: light-dark(#252525, whitesmoke);
+    padding: 20px 0px 10px 0px;
+  }
+  body,
+  html,
+  footer {
+    margin: 0;
+  }
 }
