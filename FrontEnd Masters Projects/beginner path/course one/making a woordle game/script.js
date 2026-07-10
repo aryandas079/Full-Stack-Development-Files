@@ -5,6 +5,7 @@ const guessInfo = document.getElementById("guess-info")
 const message = document.querySelector(".message")
 const maxCol = 5
 const maxRow = 6
+const data = await getWord()
 
 let correctWord
 let attempts = 6
@@ -36,7 +37,7 @@ body.addEventListener("keydown", async (event) => {
         // making the attempts reflect on the screen
         attemptsInfo.innerHTML = `Attempts Left: ${attempts}`
 
-        const data = await getWord()
+
         await check(data)
 
         for (let i = 0; i < 5; i++) {
