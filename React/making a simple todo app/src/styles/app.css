@@ -1,0 +1,9 @@
+.html {
+    margin: 0;
+}
+
+/* Ensure page has no default browser margin */
+html, body {
+    margin: 0;
+    padding: 0;
+}

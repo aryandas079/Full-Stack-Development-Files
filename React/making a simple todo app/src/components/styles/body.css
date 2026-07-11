@@ -1,0 +1,63 @@
+form { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+} 
+input { 
+    padding: 20px 40px; 
+    border-radius: 15px;
+} 
+input::placeholder { 
+    font-size: 1rem; 
+} 
+.button { 
+    padding: 5px 20px; 
+    border-radius: 10px;
+} 
+.add { 
+    background-color: darkolivegreen; 
+    color: whitesmoke; 
+    font-size: 1.25rem;
+} 
+table{  
+    text-align: left; 
+    font-size: 1.25rem; 
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: 0 auto; 
+    margin-top: 20px;
+} 
+.delete { 
+    background-color: crimson; 
+    color: whitesmoke; 
+    padding: 10px 30px;
+}
+
+/* Align table columns: give columns widths and center the action cell */
+.todo-table {
+    width: 80%;
+    border-collapse: collapse;
+}
+.todo-table th,
+.todo-table td {
+    padding: 12px 20px;
+}
+.todo-table th:nth-child(1), .todo-table td:nth-child(1) {
+    width: 50%;
+}
+.todo-table th:nth-child(2), .todo-table td:nth-child(2) {
+    width: 25%;
+}
+.todo-table th:nth-child(3), .todo-table td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+}
+.todo-table thead th {
+    font-weight: 700;
+}
+.todo-table tbody tr td { 
+    vertical-align: middle;
+}
+.todo-table .button.delete { 
+    margin: 0 auto; 
+    display: inline-block;
+}
