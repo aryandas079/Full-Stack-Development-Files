@@ -1,0 +1,20 @@
+.forms { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 15px; 
+    gap: 10px;
+}
+.inputField, .btnField { 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    border: 0.25px solid grey; 
+}  
+.textField { 
+    width: 400px;
+}
+.btnField { 
+    padding: 10px 20px; 
+    background-color: darkolivegreen; 
+    color: whitesmoke;
+}
