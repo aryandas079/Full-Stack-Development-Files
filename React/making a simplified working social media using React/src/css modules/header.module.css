@@ -1,7 +1,7 @@
 .headerStrip { 
     margin: 0px; 
-    background-color: darkolivegreen; 
-    color: whitesmoke; 
+    background-color: var(--header-bg); 
+    color: var(--text-color); 
     font-size: 1.5rem; 
     font-family: Google Sans, Arial, Helvetica, sans-serif; 
     padding: 5px 0px;

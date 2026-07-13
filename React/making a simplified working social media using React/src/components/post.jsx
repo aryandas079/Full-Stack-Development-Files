@@ -13,10 +13,12 @@ export default function Post({ post, setPost }) {
         setText("")
     }
     return (
-        <form onSubmit={handleSubmit} className={styles.formElement}>
-            <input type="text" value={name} onChange={(event) => setName(event.target.value)} placeholder="enter your name" />
-            <textarea value={text} id="content" placeholder="what's on your mind?" onChange={(event) => setText(event.target.value)}></textarea>
-            <button type="submit">Post</button>
-        </form>
+        <div className={styles.body}>
+            <form onSubmit={handleSubmit} className={styles.formElement}>
+                <input type="text" value={name} onChange={(event) => setName(event.target.value)} placeholder="enter your name" />
+                <textarea value={text} id="content" placeholder="what's on your mind?" onChange={(event) => setText(event.target.value)}></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
     )
 }

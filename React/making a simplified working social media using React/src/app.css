@@ -1,10 +1,39 @@
-.dark { 
-    background-color: #212121; 
-    color: whitesmoke; 
-    height: 100vh;
-} 
-.light { 
-    background-color: white; 
-    color: black; 
-    height: 100vh;
+.appShell {
+    min-height: 100vh;
+    --page-bg: #ffffff;
+    --text-color: whitesmoke;
+    --header-bg: darkolivegreen;
+    --sidebar-bg: rgb(127, 156, 78);
+    --card-bg: darkolivegreen;
+    --surface-bg: #ffffff;
+    --border-color: #b3b3b3;
+    --active-bg: whitesmoke;
+    --active-text: #111111;
+    --footer-bg: rgb(177, 219, 104);
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+.light {
+    color-scheme: light;
+}
+
+.dark {
+    --page-bg: #1f1f1f;
+    --text-color: #f5f5f5;
+    --header-bg: #2f3d22;
+    --sidebar-bg: #34411f;
+    --card-bg: #2f3d22;
+    --surface-bg: #2a2a2a;
+    --border-color: #5f5f5f;
+    --active-bg: #f5f5f5;
+    --active-text: #111111;
+    --footer-bg: #334118;
+    color-scheme: dark;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
 }

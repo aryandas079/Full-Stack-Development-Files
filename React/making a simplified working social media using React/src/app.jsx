@@ -12,11 +12,13 @@ export default function App() {
     const [active, setActive] = React.useState("home")
     return (
         <>
-            <div className={theme}>
+            <div className={`appShell ${theme}`}>
                 <FeedContext.Provider value={{ active, setActive }}>
                     <Header theme={theme} setTheme={setTheme} />
-                    <Sidebar />
-                    <Body />
+                    <div className="container">
+                        <Sidebar />
+                        <Body />
+                    </div>
                     <Footer />
                 </FeedContext.Provider>
             </div>
