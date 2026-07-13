@@ -22,8 +22,8 @@
     border-radius: 10px;
     font-family: Google Sans, Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
-    background-color: var(--surface-bg);
-    color: var(--text-color);
+    background-color: whitesmoke;
+    color: black;
 }
 
 .formElement textarea {
