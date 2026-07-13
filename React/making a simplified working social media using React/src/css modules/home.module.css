@@ -1,0 +1,27 @@
+.homeMain { 
+    height: 100vh; 
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+} 
+.postContainer {
+    width: 200px; 
+    height: 225px; 
+    background-color: darkolivegreen; 
+    color: whitesmoke;
+    border: none; 
+    border-radius: 10px; 
+    margin: 10px; 
+    overflow: auto; 
+    font-family: Google Sans, Arial, Helvetica, sans-serif; 
+    padding-left: 10px;
+} 
+.postContainer::-webkit-scrollbar { 
+    display: none;
+} 
+.name { 
+    font-size: 1.25rem; 
+} 
+.content { 
+    font-size: 0.85rem;
+}

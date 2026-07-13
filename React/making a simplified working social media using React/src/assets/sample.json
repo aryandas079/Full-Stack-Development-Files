@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Aryan",
+        "content": "Hello everyone! Excited to join this platform."
+    },
+    {
+        "name": "Sophia",
+        "content": "Just finished reading an amazing book on artificial intelligence. The future is fascinating!"
+    },
+    {
+        "name": "Liam",
+        "content": "Anyone interested in contributing to an open-source React project? Looking for frontend developers."
+    },
+    {
+        "name": "Emma",
+        "content": "Coffee + coding = perfect morning."
+    },
+    {
+        "name": "Noah",
+        "content": "Today I solved my first medium-level DSA problem without looking at the solution. Small wins matter!"
+    },
+    {
+        "name": "Olivia",
+        "content": "Sunsets never get old. Every evening feels like a different painting."
+    },
+    {
+        "name": "Ethan",
+        "content": "Started learning Docker today. Containers seemed confusing at first, but they're actually pretty interesting once you understand images, volumes, and networking."
+    },
+    {
+        "name": "Ava",
+        "content": "Music helps me concentrate while studying. What's your favorite playlist?"
+    },
+    {
+        "name": "James",
+        "content": "The best way to learn programming is by building projects instead of endlessly watching tutorials."
+    },
+    {
+        "name": "Isabella",
+        "content": "Had an amazing trip this weekend! The weather was perfect, the food was delicious, and I took hundreds of photos."
+    },
+    {
+        "name": "Benjamin",
+        "content": "Debugging code for three hours only to realize I missed a semicolon..."
+    },
+    {
+        "name": "Charlotte",
+        "content": "Looking forward to the next hackathon. Working with teammates always teaches me something new."
+    },
+    {
+        "name": "Lucas",
+        "content": "Consistency beats motivation. Even one hour of focused work every day can produce incredible results over time."
+    },
+    {
+        "name": "Mia",
+        "content": "Trying out a new recipe today. Hopefully I don't burn the kitchen."
+    },
+    {
+        "name": "William",
+        "content": "Technology evolves rapidly, but the fundamentals remain valuable. Mastering data structures, algorithms, operating systems, databases, and networking creates a strong foundation that makes learning new frameworks and tools much easier in the future."
+    }
+]

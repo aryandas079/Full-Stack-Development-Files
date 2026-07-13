@@ -1,0 +1,27 @@
+.formElement { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 100vh; 
+    gap: 15px;
+} 
+.formElement input, .formElement textarea, .formElement button { 
+    width: 500px; 
+    padding: 15px 30px; 
+    border: 0.5px solid gray; 
+    border-radius: 10px; 
+} 
+.formElement textarea { 
+    resize: none; 
+    height: 400px;
+} 
+.formElement button { 
+    width: 300px; 
+    background-color: darkolivegreen; 
+    color: whitesmoke;
+} 
+.formElement button, .formElement input::placeholder, .formElement textarea::placeholder, .formElement input, .formElement textarea { 
+    font-family: Google Sans, Arial, Helvetica, sans-serif; 
+    font-size: 1.125rem;
+}
