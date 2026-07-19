@@ -1,0 +1,19 @@
+{
+  "name": "simple_express_app",
+  "version": "1.0.0",
+  "description": "this is just a simple express app made just for testing purposes ",
+  "license": "ISC",
+  "author": "Aryan Das",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
