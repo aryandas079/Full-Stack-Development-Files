@@ -1,0 +1,12 @@
+{
+  "name": "node_login",
+  "version": "1.0.0",
+  "description": "this is a simple node login page made with the help of express to console log the login details ",
+  "license": "ISC",
+  "author": "Aryan Das",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
