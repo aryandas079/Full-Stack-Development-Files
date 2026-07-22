@@ -3,7 +3,7 @@ import homeRouter from "./routes/homeRouter.js"
 import login from "./routes/loginRouter.js"
 
 const app = express()
-
+app.use(express.urlencoded({ extended: true }))
 app.use((req, res, next) => {
     console.log(req.method)
     console.log(req.url)
