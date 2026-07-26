@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head")%>
+
+    <body class="min-h-screen bg-slate-950 text-slate-100">
+        <main class="mx-auto flex min-h-screen max-w-5xl items-center px-4 py-12 sm:px-6 lg:px-8">
+            <section
+                class="w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl shadow-black/30 backdrop-blur">
+                <div class="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
+                    <div class="bg-linear-to-br from-cyan-400 via-sky-500 to-indigo-600 p-8 sm:p-10 lg:p-12">
+                        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600/80">TravelExp</p>
+                        <h1 class="mt-4 max-w-md text-4xl font-bold tracking-tight text-cyan-600 sm:text-5xl">
+                            Add a new home listing with TravelExp.
+                        </h1>
+                        <p class="mt-5 max-w-md text-sm leading-6 text-cyan-600/80 sm:text-base">
+                            make it easy
+                        </p>
+                    </div>
+
+                    <form action="/host/homes" method="POST" class="space-y-6 bg-slate-950/80 p-8 sm:p-10 lg:p-12">
+                        <div class="grid gap-5">
+                            <div>
+                                <label for="house-name" class="mb-2 block text-sm font-medium text-slate-200">House
+                                    Name</label>
+                                <input id="house-name" type="text" placeholder="name of your house" name="houseName"
+                                    class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                            </div>
+
+                            <div>
+                                <label for="house-address" class="mb-2 block text-sm font-medium text-slate-200">House
+                                    Address</label>
+                                <input id="house-address" type="text" placeholder="address of your house"
+                                    name="house-address"
+                                    class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                            </div>
+
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Contact
+                                    Details</p>
+                            </div>
+
+                            <div class="grid gap-5 sm:grid-cols-2">
+                                <div>
+                                    <label for="contact" class="mb-2 block text-sm font-medium text-slate-200">Contact
+                                        No.</label>
+                                    <input id="contact" type="number" maxlength="10" minlength="10"
+                                        placeholder="contact for your house" name="houseContact"
+                                        class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="mb-2 block text-sm font-medium text-slate-200">Email
+                                        Id</label>
+                                    <input id="email" type="email" placeholder="email for your house" name="houseEmail"
+                                        class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">House Details
+                                </p>
+                            </div>
+
+                            <div>
+                                <label for="selection" class="mb-2 block text-sm font-medium text-slate-200">No. of
+                                    people per Room</label>
+                                <select name="homeSelect" id="selection"
+                                    class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                                    <option value="single">Single</option>
+                                    <option value="double">Double</option>
+                                    <option value="triple">Triple</option>
+                                    <option value="quadruple">Quadruple</option>
+                                    <option value="5 seater">5 seater</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="details" class="mb-2 block text-sm font-medium text-slate-200">House
+                                    Details</label>
+                                <input id="details" type="text" placeholder="details for your house" name="houseDetails"
+                                    class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                            </div>
+
+                            <button type="submit"
+                                class="inline-flex w-full items-center justify-center rounded-2xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+                                Submit Home
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
