@@ -9,5 +9,6 @@ router.use((req, res, next) => {
             console.log(err)
         }
     })
+    next()
 })
 export default router

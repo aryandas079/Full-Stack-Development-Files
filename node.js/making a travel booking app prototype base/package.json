@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js && npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "start": "nodemon server.js && npx @tailwindcss/cli -i ./views/index.css -o ./public/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",

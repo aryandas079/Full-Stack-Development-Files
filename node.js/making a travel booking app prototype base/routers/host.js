@@ -1,5 +1,5 @@
 import express from "express"
-import homeMid from "../middleware/homeMid.js"
+import addHome from "../middleware/addHome.js"
 const router = express.Router()
-router.get("/", homeMid)
+router.get("/add-home", addHome)
 export default router
