@@ -1,44 +1,40 @@
 # Full Stack Development Projects
 
-A collection of full-stack web development projects built while learning and practicing modern web technologies. This repository showcases responsive user interfaces, backend development, database integration, authentication systems, API consumption, and deployment workflows.
+A collection of full-stack web development projects built while completing a structured full-stack developer curriculum. This repository showcases responsive interfaces, backend development, database fundamentals, API integration, testing, and modern React/Next.js architecture.
 
 ---
 
 ## Overview
 
-This repository contains projects ranging from beginner-friendly applications to more advanced full-stack implementations. The primary goal is to strengthen practical development skills and demonstrate proficiency across the complete web development stack.
+This repository contains projects ranging from beginner-friendly applications to more advanced full-stack implementations, built to strengthen practical skills across the full web development stack — from HTML/CSS fundamentals to Next.js and TypeScript.
 
 ---
 
 ## Technologies Used
 
 ### Frontend
-
-* HTML5
-* CSS3
+* HTML5 & CSS3
 * JavaScript (ES6+)
-* Responsive Design
-* Flexbox & Grid
-* React.js (where applicable)
+* Responsive Design (Flexbox & Grid)
+* Accessible Web Development
+* React.js
+* TypeScript
+* Next.js
 
 ### Backend
-
 * Node.js
 * Express.js
+* REST APIs & Async JavaScript
 
 ### Database
+* Database fundamentals & data modeling
 
-* MongoDB
-* Mongoose
+### Testing
+* Unit and integration testing basics
 
-### Tools & Platforms
-
-* Git & GitHub
-* VS Code
-* Postman
-* Vercel
-* Netlify
-* Render
+### Other
+* AI Engineering (integrating AI into web applications)
+* Git & version control
 
 ---
 
@@ -69,54 +65,37 @@ Full-Stack-Projects/
 
 ## Features
 
-* Responsive and mobile-first design
-* Modern UI/UX principles
+* Responsive, accessible, mobile-first design
 * REST API integration
-* Authentication and authorization
 * CRUD operations
 * Database connectivity
+* Authentication basics
+* Tested, maintainable code
 * Deployment-ready applications
-* Clean and maintainable code structure
 
 ---
 
 ## Getting Started
 
 ### Clone the Repository
-
 ```bash
 git clone https://github.com/your-username/full-stack-projects.git
 ```
 
 ### Navigate to the Project
-
 ```bash
 cd full-stack-projects
 ```
 
 ### Install Dependencies
-
 ```bash
 npm install
 ```
 
 ### Run the Development Server
-
 ```bash
 npm start
 ```
-
----
-
-## Deployment
-
-Projects in this repository are deployed using platforms such as:
-
-* Vercel
-* Netlify
-* Render
-
-Live project links can be found inside the respective project folders.
 
 ---
 
@@ -124,45 +103,30 @@ Live project links can be found inside the respective project folders.
 
 Through these projects, the following concepts are explored:
 
-* Frontend Development
-* Backend Development
-* API Design
-* Database Management
-* Authentication Systems
-* Full Stack Architecture
+* Frontend Development (HTML, CSS, JavaScript, React, TypeScript, Next.js)
+* Accessible & Responsive Design
+* Backend Development (Node.js, Express.js)
+* API Design & Async JavaScript
+* Database Fundamentals
+* Testing
+* AI Engineering
 * Version Control with Git
-* Deployment and Hosting
-
----
-
-## Future Improvements
-
-* Add TypeScript support
-* Implement automated testing
-* Integrate CI/CD pipelines
-* Improve performance optimization
-* Add advanced authentication features
 
 ---
 
 ## Author
 
 **Aryan Das**
-
 Electrical Engineering Student at NIT Silchar
 
 Interested in:
-
 * Full Stack Development
 * Data Science
 * Machine Learning
 * Artificial Intelligence
-* Software Engineering
 
 ---
 
 ## License
 
-This repository is licensed under the MIT License.
-
-Feel free to use, modify, and learn from the projects included in this repository.
+This repository is licensed under the MIT License. Feel free to use, modify, and learn from the projects included here.
